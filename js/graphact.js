@@ -194,7 +194,7 @@ GraphAct.prototype.isSelectedNode = function(node) {
 function setEventHandler(graphact) {
     $('#showReverse').change(function(){
         graphact.conf.order = !$(this).is(':checked');
-        $('#showReverseLabel').css({ 'font-weight': graphact.conf.order ? 'bold' : 'normal' });
+        $('#showReverseLabel').css({ 'font-weight': graphact.conf.order ? 'normal' : 'bold' });
         graphact.updateColoring();
     });
     $('#traceLevel').change(function(){

@@ -31,7 +31,7 @@ CSS_FILES := css/style.css
 
 all: $(subst .dot,.htm, $(wildcard *.dot))
 
-%.htm: %.svg Makefile $(SVG2HTM) $(ERB_FILES) $(JS_FILES) $(CSS_FILES)
+%.htm: %.svg Makefile $(SVG2HTM) $(ERB_FILE) $(JS_FILES) $(CSS_FILES)
 	$(SVG2HTM) $(addprefix -j , $(JS_FILES)) $(addprefix -c , $(CSS_FILES)) \
 		-T '$(TITLE)' -t $(ERB_FILE) -s $< -o $@
 

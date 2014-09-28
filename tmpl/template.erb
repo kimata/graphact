@@ -20,14 +20,14 @@
     <div class="header">
       <h1><%= title %></h1>
       <div class="description">
-        ノードをクリックすると，関連づけられているノードをハイライト表示します．
+        ノードをダブルクリックすると，関連づけられているノードをハイライト表示します．
       </div>
       <div class="config">
         動作設定:
         <input type="checkbox" name="showReverse" id="showReverse" value="1" />
 		<label for="showReverse" id="showReverseLabel">逆方向に辿る</label>
         <label for="traceLevel" id="traceLevelLabel">辿るホップ数</label>
-        <input type="number" name="traceLevel" id="traceLevel" min="0" value="1" />
+        <input type="number" name="traceLevel" id="traceLevel" min="0" value="100" />
       </div>
     </div>
 
