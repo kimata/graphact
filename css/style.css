@@ -48,6 +48,13 @@ html, body {
     z-index: 2;
 }
 
+.config {
+    margin-top: 3px;
+    padding   : 3px;
+    border: 1px dotted #333333;
+    background-color: #eeeeee;
+}
+
 svg {
     position:absolute;
     top: 0;

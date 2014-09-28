@@ -54,6 +54,13 @@ html, body {
     z-index: 2;
 }
 
+.config {
+    margin-top: 3px;
+    padding   : 3px;
+    border: 1px dotted #333333;
+    background-color: #eeeeee;
+}
+
 svg {
     position:absolute;
     top: 0;
@@ -11062,7 +11069,7 @@ $(document).ready(function() {
       <div class="description">
         ノードをクリックすると，関連づけられているノードをハイライト表示します．
       </div>
-      <div>
+      <div class="config">
         動作設定:
         <input type="checkbox" name="showReverse" id="showReverse" value="1" />
 		<label for="showReverse" id="showReverseLabel">逆方向に辿る</label>
