@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <% css_file_list.each do |x| %>
+    <style type="text/css">
+      <%= render x %>
+    </style>
+    <% end %>
+
+    <% js_file_list.each do |x| %>
+    <script type="text/javascript">
+      <%= render x %>
+    </script>
+    <% end %>
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1><%= title %></h1>
+      <div class="description">
+        ノードをクリックすると，関連づけられているノードをハイライト表示します．
+      </div>
+      <div>
+        動作設定:
+        <input type="checkbox" name="showReverse" id="showReverse" value="1" />
+		<label for="showReverse" id="showReverseLabel">逆方向に辿る</label>
+        <label for="traceLevel" id="traceLevelLabel">辿るホップ数</label>
+        <input type="number" name="traceLevel" id="traceLevel" min="0" value="1" />
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="graph">
+      <g id="viewport">
+        <%= svg_data %>
+      </g>
+    </svg>
+  </body>
+</html>
+
+<!--
+Local Variables:
+coding: utf-8
+mode: html
+tab-width: 4
+indent-tabs-mode: nil
+End:
+-->

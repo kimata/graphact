@@ -1,0 +1,74 @@
+/*
+Copyright (C) 2014 Tetsuya Kimata <kimata@green-rabbit.net>
+
+All rights reserved.
+
+This software is provided 'as-is', without any express or implied
+warranty.  In no event will the authors be held liable for any
+damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any
+purpose, including commercial applications, and to alter it and
+redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must
+   not claim that you wrote the original software. If you use this
+   software in a product, an acknowledgment in the product
+   documentation would be appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must
+   not be misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source
+   distribution.
+*/
+
+@charset "UTF-8";
+
+* {
+    font-family: 'メイリオ';
+    padding: 0;
+    margin: 0;
+}
+
+.node {
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    z-index: 2;
+}
+
+svg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#traceLevelLabel {
+    margin-left: 1em;
+}
+
+#traceLevel {
+    width: 3em;
+}
+
+/*
+Local Variables:
+coding: utf-8
+mode: css
+tab-width: 4
+indent-tabs-mode: nil
+End:
+*/
