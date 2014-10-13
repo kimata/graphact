@@ -33,6 +33,7 @@ redistribute it freely, subject to the following restrictions:
 
 * {
     font-family: 'メイリオ';
+    font-size: 10pt;
     padding: 0;
     margin: 0;
 }
@@ -45,6 +46,10 @@ html, body {
     height: 100%;
 }
 
+h1 {
+    font-size: 20pt;
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -52,6 +57,7 @@ html, body {
     margin-top: 0.5em;
     margin-left: 0.5em;
     z-index: 2;
+    background-color: rgba(255,255,255,0.8);;
 }
 
 .config {
@@ -11075,7 +11081,7 @@ $(document).ready(function() {
         <input type="checkbox" name="showReverse" id="showReverse" value="1" />
 		<label for="showReverse" id="showReverseLabel">逆方向に辿る</label>
         <label for="traceLevel" id="traceLevelLabel">辿るホップ数</label>
-        <input type="number" name="traceLevel" id="traceLevel" min="0" value="100" />
+        <input type="number" name="traceLevel" id="traceLevel" min="0" value="5" />
       </div>
     </div>
 
